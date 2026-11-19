@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101b35">
+  <meta name="description" content="Corbin Student Learning Hub — learn, think, defend, and grow.">
+  <title>Corbin Student Learning Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="Corbin Learning Hub home">
+        <span class="brand-mark">C<span>+</span></span>
+        <span class="brand-copy"><strong>CORBIN</strong><small>LEARNING HUB</small></span>
+      </a>
+      <div class="workspace-label">LEARNING SPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-view="home"><span class="nav-icon">⌂</span> Overview</button>
+        <button class="nav-link" data-view="courses"><span class="nav-icon">▤</span> My courses</button>
+        <button class="nav-link" data-view="path"><span class="nav-icon">◈</span> Learning path</button>
+        <button class="nav-link" data-view="tutor"><span class="nav-icon">✳</span> AI study partner <span class="nav-tag">BETA</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note"><span class="note-spark">✦</span><strong>Think deeper.</strong><p>Your next breakthrough starts with a better question.</p></div>
+        <div class="profile-mini"><div class="avatar">SC</div><div><strong>Student account</strong><small>Learning profile</small></div><span class="more">•••</span></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb">Learning space <span>/</span> <strong id="crumb">Overview</strong></div>
+        <div class="top-actions"><span class="today" id="todayLabel"></span><button class="icon-button" aria-label="Notifications">♧<i></i></button><div class="avatar small">SC</div></div>
+      </header>
+
+      <section class="view active" id="homeView">
+        <div class="welcome-row">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> YOUR LEARNING, YOUR MOMENTUM</div><h1>Good to see you<span class="gold-dot">.</span></h1><p class="subhead">Every lesson is a chance to sharpen your thinking. Let's get into it.</p></div>
+          <div class="streak-card"><div class="streak-icon">✦</div><div><strong>Keep your momentum</strong><span>One focused session at a time.</span></div></div>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-top"><span>COURSES</span><span class="stat-icon blue">▤</span></div><div class="stat-value">04</div><div class="stat-foot">Your active learning spaces</div></article>
+          <article class="stat-card"><div class="stat-top"><span>LESSONS COMPLETED</span><span class="stat-icon gold">✓</span></div><div class="stat-value">12</div><div class="stat-foot"><span class="positive">+3</span> this learning cycle</div></article>
+          <article class="stat-card"><div class="stat-top"><span>LEARNING STREAK</span><span class="stat-icon purple">↗</span></div><div class="stat-value">05 <small>days</small></div><div class="stat-foot">Consistency builds mastery</div></article>
+          <article class="stat-card"><div class="stat-top"><span>OVERALL PROGRESS</span><span class="stat-icon green">◎</span></div><div class="stat-value">68<span class="percent">%</span></div><div class="progress-track"><span style="width:68%"></span></div></article>
+        </div>
+
+        <div class="section-heading"><div><div class="eyebrow">PICK UP WHERE YOU LEFT OFF</div><h2>Your learning spaces</h2></div><button class="text-button" data-view="courses">View all courses <span>→</span></button></div>
+        <div class="course-grid" id="courseGrid">
+          <article class="course-card history"><div class="course-top"><span class="course-icon">⌂</span><span class="course-type">SOCIAL STUDIES</span></div><div class="course-content"><h3>U.S. History</h3><p>Standard</p><div class="course-progress"><div class="progress-label"><span>Course progress</span><strong>72%</strong></div><div class="progress-track"><span style="width:72%"></span></div></div><button class="course-button" data-course="history">Continue learning <span>→</span></button></div></article>
+          <article class="course-card honors"><div class="course-top"><span class="course-icon">✦</span><span class="course-type">SOCIAL STUDIES</span></div><div class="course-content"><h3>U.S. History</h3><p>Honors</p><div class="course-progress"><div class="progress-label"><span>Course progress</span><strong>54%</strong></div><div class="progress-track"><span style="width:54%"></span></div></div><button class="course-button" data-course="honors">Continue learning <span>→</span></button></div></article>
+          <article class="course-card psychology"><div class="course-top"><span class="course-icon">◉</span><span class="course-type">SOCIAL SCIENCE</span></div><div class="course-content"><h3>Psychology</h3><p>Understanding the mind</p><div class="course-progress"><div class="progress-label"><span>Course progress</span><strong>81%</strong></div><div class="progress-track"><span style="width:81%"></span></div></div><button class="course-button" data-course="psychology">Continue learning <span>→</span></button></div></article>
+          <article class="course-card sociology"><div class="course-top"><span class="course-icon">◎</span><span class="course-type">SOCIAL SCIENCE</span></div><div class="course-content"><h3>Sociology</h3><p>People, culture & society</p><div class="course-progress"><div class="progress-label"><span>Course progress</span><strong>63%</strong></div><div class="progress-track"><span style="width:63%"></span></div></div><button class="course-button" data-course="sociology">Continue learning <span>→</span></button></div></article>
+        </div>
+
+        <div class="lower-grid">
+          <section class="panel next-panel"><div class="panel-heading"><div><div class="eyebrow">UP NEXT</div><h2>Continue your journey</h2></div><span class="live-pill">READY WHEN YOU ARE</span></div><div class="next-lesson"><div class="lesson-number">01</div><div class="lesson-info"><span class="lesson-course">U.S. HISTORY · STANDARD</span><h3>Reconstruction: Promise and Limits</h3><p>Lesson 7 · 25–35 min · Reading + analysis</p></div><button class="round-arrow" id="openLesson" aria-label="Open lesson">→</button></div></section>
+          <section class="panel cls-panel"><div class="eyebrow">THE CORBIN LEARNING SYSTEM</div><h2>Five moves. Deeper thinking.</h2><div class="cls-steps"><span><b>01</b> Learn It</span><span><b>02</b> Process It</span><span><b>03</b> Defend It</span><span><b>04</b> Apply It</span><span><b>05</b> Reflect On It</span></div><p>Don't just collect information. Make meaning from it.</p></section>
+        </div>
+      </section>
+
+      <section class="view" id="coursesView"><div class="page-intro"><div class="eyebrow">YOUR CLASSES</div><h1>My courses<span class="gold-dot">.</span></h1><p class="subhead">Choose a course to explore its learning path and current lesson.</p></div><div class="course-grid expanded" id="allCourses"></div></section>
+
+      <section class="view" id="pathView"><div class="page-intro"><div class="eyebrow">YOUR PROGRESS</div><h1>Learning path<span class="gold-dot">.</span></h1><p class="subhead">A clear view of the work you've completed and what's ahead.</p></div><div class="panel path-panel"><div class="path-header"><div><span class="lesson-course">CURRENT LEARNING CYCLE</span><h2>Build understanding. Show what you know.</h2></div><strong>68%</strong></div><div class="path-track"><span style="width:68%"></span></div><div class="path-milestones"><div class="milestone done"><i>✓</i><strong>Learn It</strong><small>Build background knowledge</small></div><div class="milestone done"><i>✓</i><strong>Process It</strong><small>Make connections</small></div><div class="milestone current"><i>03</i><strong>Defend It</strong><small>Support your thinking</small></div><div class="milestone"><i>04</i><strong>Apply It</strong><small>Use what you've learned</small></div><div class="milestone"><i>05</i><strong>Reflect On It</strong><small>Evaluate your growth</small></div></div></div></section>
+
+      <section class="view" id="tutorView"><div class="page-intro"><div class="eyebrow">THINKING PARTNER</div><h1>Study with purpose<span class="gold-dot">.</span></h1><p class="subhead">A good tutor doesn't do the thinking for you. It helps you think more clearly.</p></div><div class="tutor-layout"><div class="panel tutor-intro"><div class="tutor-orb">✳</div><span class="lesson-course">SOCRATIC STUDY PARTNER</span><h2>Let's work through it together.</h2><p>Use this space to organize a question, test an idea, or prepare to defend a claim. The study partner interface is ready; live AI responses require a secured model connection.</p><div class="prompt-chips"><button data-prompt="Help me understand the main idea of my current lesson.">Understand a concept</button><button data-prompt="Ask me questions that help me test my argument.">Test my argument</button><button data-prompt="Help me study by asking one question at a time.">Quiz me</button></div></div><div class="panel tutor-chat"><div class="chat-head"><span class="chat-status"></span><strong>Study session</strong><small>Guided thinking</small></div><div class="chat-messages" id="chatMessages"><div class="assistant-message">Welcome. What are you working through today? Start with a topic, a question, or an idea you want to examine.</div></div><form class="chat-form" id="chatForm"><input id="chatInput" placeholder="Type a question or topic..." autocomplete="off"><button aria-label="Send message">↑</button></form><p class="chat-disclaimer">Learning support preview · AI service not connected</p></div></div></section>
+
+      <section class="view" id="lessonView"><div class="lesson-toolbar"><button class="back-button" id="backHome">← Back to overview</button><span class="lesson-course">U.S. HISTORY · STANDARD</span></div><div class="lesson-hero"><div class="eyebrow">LESSON 07 · LEARN IT</div><h1>Reconstruction: Promise and Limits</h1><p>Examine the competing visions for rebuilding the United States after the Civil War.</p><div class="lesson-meta"><span>◷ 25–35 minutes</span><span>▤ Reading + analysis</span><span>◈ CLS learning sequence</span></div></div><div class="lesson-body"><aside class="lesson-outline"><strong>IN THIS LESSON</strong><a class="outline-active">01 &nbsp; Set the purpose</a><a>02 &nbsp; Build context</a><a>03 &nbsp; Process evidence</a><a>04 &nbsp; Defend a claim</a><a>05 &nbsp; Reflect</a></aside><article class="lesson-reading"><div class="eyebrow">01 / LEARN IT</div><h2>Start with the essential question</h2><p class="essential-question">To what extent did Reconstruction fulfill the promises of freedom and citizenship after the Civil War?</p><p>Reconstruction was the period after the Civil War when the United States confronted the challenge of rebuilding the South and defining freedom for formerly enslaved people. The period raised fundamental questions about citizenship, federal power, political participation, and the meaning of equality.</p><div class="checkpoint"><span class="checkpoint-label">THINKING CHECKPOINT</span><h3>Before you move on</h3><p>In your own words, identify one major challenge the nation faced after the Civil War.</p><textarea id="checkpointAnswer" placeholder="Write your thinking here..."></textarea><button class="primary-button" id="saveCheckpoint">Save response <span>→</span></button><small id="checkpointStatus" aria-live="polite"></small></div></article></div></section>
+
+      <footer class="footer"><span>© CORBIN LEARNING HUB</span><span>Learn with purpose. Think with confidence.</span><span>STUDENT EXPERIENCE · PREVIEW</span></footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
