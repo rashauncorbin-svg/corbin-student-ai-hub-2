@@ -2,23 +2,38 @@
 
 A student-centered learning platform organized around the Corbin Learning System (CLS): **Learn It → Process It → Defend It → Apply It → Reflect On It**.
 
-## Current build: Student experience foundation
+## Current staging build
 
-The staging branch contains a responsive front-end preview with:
+### Student experience
+- Responsive student dashboard and four course spaces: U.S. History Standard, U.S. History Honors, Psychology, and Sociology.
+- Interactive lesson player with five navigable CLS phases.
+- Thinking checkpoints that save locally in the current browser.
+- Course-specific essential questions and guided prompts.
+- Socratic study-partner interface with guided response patterns; this is not a live AI model connection.
+- Student-to-teacher workspace navigation.
 
-- Student overview dashboard and course cards for U.S. History Standard, U.S. History Honors, Psychology, and Sociology
-- Navigation for overview, courses, learning path, and AI study partner
-- CLS learning-path progress visualization
-- Lesson-player preview with an essential question and written thinking checkpoint
-- Guided study-partner interface showing where a secured AI integration will connect
-- Mobile navigation and responsive layouts
-- Baseline static-host security headers
+### Teacher workspace
+- Separate teacher command-center preview at `teacher.html`.
+- Local class organization for the four course spaces.
+- Local assignment planner tagged to CLS phases.
+- Student work review area with the security boundary clearly identified.
+- Teacher preview records remain in the browser's local storage and are not connected to student accounts or a server.
+
+### Backend foundation
+- Cloudflare Worker API shell under `worker/`.
+- D1 relational schema and initial migration for users, classes, enrollments, lessons, and submissions.
+- Public course catalogue and health endpoints.
+- Protected API routes fail closed until authentication and authorization are implemented.
+- Wrangler configuration template for staging.
+
+### Automated checks
+GitHub Actions runs `node scripts/validate.mjs` on pushes to the staging and main branches and on pull requests. It checks JavaScript syntax, required frontend asset references, and the initial database table definitions.
 
 ## Important implementation boundaries
 
-This is currently a **front-end prototype**, not a production student information system. Course progress and sample counts are illustrative preview data. Checkpoint responses are not persisted. The study-partner interface does not call a live model. There is no student authentication, teacher authorization, class isolation, gradebook, or Canvas integration in this initial build.
+This remains a **staging prototype**, not a production student information system. Preview progress, classes, and assignment plans are stored locally in the browser only. They do not sync across devices or appear in a teacher's account. The tutor does not call a live model. There is no student authentication, teacher authorization, class isolation, gradebook, or Canvas integration yet.
 
-Do not enter real student names, grades, IEP/504 information, or other student records into this preview.
+Do not enter real student names, grades, IEP/504 information, or other student records into this preview. Do not put API keys or credentials in frontend files or this public repository.
 
 ## Planned architecture
 
@@ -39,4 +54,4 @@ Do not enter real student names, grades, IEP/504 information, or other student r
 
 ## Local preview
 
-Open `index.html` in a modern browser, or serve this directory with any static HTTP server. No build step is required for the current front-end preview.
+Open `index.html` or `teacher.html` in a modern browser. No frontend build step is required. Run `node scripts/validate.mjs` to perform the repository's automated source and asset checks.
