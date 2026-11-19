@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101b35">
+  <meta name="description" content="Corbin Learning Hub teacher workspace preview">
+  <title>Teacher Command Center | Corbin Learning Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+  <div class="teacher-shell">
+    <aside class="teacher-sidebar">
+      <a class="brand" href="index.html"><span class="brand-mark">C<span>+</span></span><span class="brand-copy"><strong>CORBIN</strong><small>TEACHER CENTER</small></span></a>
+      <div class="workspace-label">INSTRUCTIONAL WORKSPACE</div>
+      <nav class="teacher-nav">
+        <a class="active" href="#overview">Overview</a>
+        <a href="#classes">My classes</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#submissions">Student work</a>
+        <a href="index.html">Student experience ↗</a>
+      </nav>
+      <div class="teacher-sidebar-note"><strong>Corbin Learning System</strong><p>Learn It · Process It · Defend It · Apply It · Reflect On It</p></div>
+    </aside>
+    <main class="teacher-main">
+      <header class="teacher-topbar"><div><span class="workspace-label">GVE EDUCATOR SOLUTIONS</span><h1>Teacher command center<span class="gold-dot">.</span></h1></div><span class="preview-label">LOCAL PREVIEW · NOT CONNECTED TO STUDENT RECORDS</span></header>
+      <section class="teacher-section" id="overview">
+        <div class="teacher-welcome"><div><div class="eyebrow">INSTRUCTIONAL SNAPSHOT</div><h2>Plan with clarity. Respond with evidence.</h2><p>Manage course spaces, organize assignments, and review learning evidence in one workspace.</p></div></div>
+        <div class="teacher-metrics">
+          <article><span>COURSE SPACES</span><strong>04</strong><small>Standard, Honors, Psychology, Sociology</small></article>
+          <article><span>CLASSES CREATED</span><strong id="classCount">00</strong><small>Saved in this browser preview</small></article>
+          <article><span>ASSIGNMENTS</span><strong id="assignmentCount">00</strong><small>Local planning records</small></article>
+          <article><span>SUBMISSIONS</span><strong>—</strong><small>Requires authenticated student accounts</small></article>
+        </div>
+      </section>
+      <section class="teacher-section" id="classes">
+        <div class="teacher-section-heading"><div><div class="eyebrow">CLASS ORGANIZATION</div><h2>My classes</h2></div></div>
+        <form class="teacher-form" id="classForm">
+          <label>Class name<input id="className" required maxlength="80" placeholder="e.g. Period 2 — U.S. History Standard"></label>
+          <label>Course<select id="classCourse"><option value="us-history-standard">U.S. History — Standard</option><option value="us-history-honors">U.S. History — Honors</option><option value="psychology">Psychology</option><option value="sociology">Sociology</option></select></label>
+          <button class="primary-button" type="submit">Create class +</button>
+        </form>
+        <div class="teacher-record-grid" id="classList"><div class="empty-state">No local classes yet. Create a class to organize your planning workspace.</div></div>
+      </section>
+      <section class="teacher-section" id="assignments">
+        <div class="teacher-section-heading"><div><div class="eyebrow">LEARNING DESIGN</div><h2>Assignment planner</h2></div></div>
+        <form class="teacher-form assignment-form" id="assignmentForm">
+          <label>Assignment title<input id="assignmentTitle" required maxlength="120" placeholder="e.g. Reconstruction DBQ — Evidence Analysis"></label>
+          <label>Course<select id="assignmentCourse"><option value="us-history-standard">U.S. History — Standard</option><option value="us-history-honors">U.S. History — Honors</option><option value="psychology">Psychology</option><option value="sociology">Sociology</option></select></label>
+          <label>CLS phase<select id="assignmentPhase"><option>Learn It</option><option>Process It</option><option>Defend It</option><option>Apply It</option><option>Reflect On It</option></select></label>
+          <button class="primary-button" type="submit">Add assignment +</button>
+        </form>
+        <div class="teacher-record-grid" id="assignmentList"><div class="empty-state">Your planned assignments will appear here.</div></div>
+      </section>
+      <section class="teacher-section" id="submissions">
+        <div class="teacher-section-heading"><div><div class="eyebrow">FORMATIVE ASSESSMENT</div><h2>Student work & feedback</h2></div></div>
+        <div class="teacher-notice"><strong>Student submissions are not connected yet.</strong><p>The review workflow is intentionally gated until student sign-in, teacher authorization, class membership checks, and secure database storage are active. This preview does not collect student names or grades.</p></div>
+      </section>
+      <footer class="teacher-footer"><a href="index.html">← Return to student hub</a><span>Corbin Learning Hub · Teacher workspace preview</span></footer>
+    </main>
+  </div>
+  <script src="teacher.js"></script>
+</body>
+</html>
