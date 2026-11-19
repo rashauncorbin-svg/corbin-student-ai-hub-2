@@ -1,0 +1,41 @@
+.teacher-shell{min-height:100vh;background:var(--paper)}
+.teacher-sidebar{position:fixed;inset:0 auto 0 0;width:255px;background:var(--navy);padding:30px 20px;color:white;display:flex;flex-direction:column}
+.teacher-sidebar .brand{padding-bottom:42px}
+.teacher-nav{display:grid;gap:7px;margin-top:15px}
+.teacher-nav a{padding:12px 13px;color:#bac4d3;text-decoration:none;border-radius:9px;font-size:12px}
+.teacher-nav a:hover,.teacher-nav a.active{background:#263653;color:white;box-shadow:inset 3px 0 var(--gold)}
+.teacher-sidebar-note{margin-top:auto;padding:17px 15px;border:1px solid #34435f;border-radius:12px;background:#1b2b49}
+.teacher-sidebar-note strong{font:700 12px Manrope;color:#f1d28e}
+.teacher-sidebar-note p{font-size:10px;line-height:1.6;color:#b2bdce;margin:8px 0 0}
+.teacher-main{margin-left:255px;padding:0 42px;max-width:1500px}
+.teacher-topbar{min-height:110px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.teacher-topbar h1{font-size:29px;margin:7px 0}
+.preview-label{font-size:8px;letter-spacing:.9px;color:#916b2b;background:#fbf3e3;border:1px solid #efdfbd;padding:9px 11px;border-radius:20px}
+.teacher-section{padding:28px 0;border-bottom:1px solid var(--line)}
+.teacher-welcome h2,.teacher-section-heading h2{font:750 20px Manrope;color:var(--navy);margin:8px 0}
+.teacher-welcome p{font-size:12px;color:#788397;margin:0}
+.teacher-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:23px}
+.teacher-metrics article{background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px;display:grid;gap:7px}
+.teacher-metrics article span{font-size:8px;letter-spacing:1px;color:#929bad;font-weight:700}
+.teacher-metrics article strong{font:800 25px Manrope;color:var(--navy)}
+.teacher-metrics article small{font-size:9px;color:#8993a3;line-height:1.5}
+.teacher-section-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:17px}
+.teacher-section-heading h2{margin-bottom:0}
+.teacher-form{display:grid;grid-template-columns:1.5fr 1fr auto;gap:11px;align-items:end;background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px}
+.teacher-form label{display:grid;gap:7px;font-size:9px;color:#788397;font-weight:700}
+.teacher-form input,.teacher-form select{width:100%;min-width:0;padding:11px 12px;border:1px solid #e2e6ed;border-radius:8px;background:white;color:#34425a;font:11px "DM Sans",sans-serif}
+.teacher-form .primary-button{margin:0;white-space:nowrap}
+.assignment-form{grid-template-columns:1.5fr 1fr 1fr auto}
+.teacher-record-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:14px}
+.teacher-record{background:white;border:1px solid var(--line);border-radius:12px;padding:15px}
+.teacher-record strong{display:block;color:var(--navy);font:700 12px Manrope}
+.teacher-record small{display:block;color:#8792a4;font-size:9px;margin-top:6px}
+.teacher-record button{margin-top:12px;border:0;background:#f8f1e3;color:#8d6928;border-radius:7px;padding:7px 9px;font-size:9px;font-weight:700}
+.empty-state{grid-column:1/-1;background:#fff;border:1px dashed #d8dee8;border-radius:12px;padding:20px;text-align:center;color:#8993a3;font-size:11px}
+.teacher-notice{background:#fffaf0;border:1px solid #efdfbd;border-left:3px solid var(--gold);border-radius:10px;padding:17px}
+.teacher-notice strong{font:700 12px Manrope;color:#51452e}
+.teacher-notice p{font-size:10px;line-height:1.7;color:#776c58;margin:7px 0 0}
+.teacher-footer{display:flex;justify-content:space-between;gap:15px;padding:18px 0;color:#929bad;font-size:9px}
+.teacher-footer a{color:#9b762f;text-decoration:none;font-weight:700}
+@media(max-width:1000px){.teacher-main{padding:0 25px}.teacher-metrics{grid-template-columns:repeat(2,1fr)}.teacher-record-grid{grid-template-columns:repeat(2,1fr)}.assignment-form{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.teacher-sidebar{position:relative;width:auto;inset:auto;padding:17px 18px}.teacher-sidebar .brand{padding-bottom:12px}.teacher-sidebar .workspace-label,.teacher-sidebar-note{display:none}.teacher-nav{display:flex;overflow:auto;margin:5px 0 0}.teacher-nav a{white-space:nowrap;padding:9px}.teacher-main{margin:0;padding:0 17px}.teacher-topbar{align-items:flex-start;flex-direction:column;padding:22px 0}.preview-label{font-size:7px}.teacher-form,.assignment-form{grid-template-columns:1fr}.teacher-record-grid{grid-template-columns:1fr}.teacher-footer{flex-direction:column}}
