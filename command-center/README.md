@@ -34,3 +34,12 @@ This branch contains a navigable frontend foundation with illustrative records o
 ## Development direction
 
 The next engineering stages are: information architecture and workflows; identity and permissions; persistent relational data model; file and version management; search and cross-linking; production and client workflows; reporting and automation; deployment and security validation.
+
+## Command, prompt, and code workspaces
+
+The AI COMMAND navigation group adds:
+- Command Library: reusable execution briefs for Codex, Brisk, NotebookLM, and GVE workflows.
+- Prompt Studio: editable prompt templates.
+- Code Vault: reusable snippets and technical references.
+
+Preview records can be created, edited, searched by browsing the collection, and copied. They are stored in browser localStorage only. Direct dispatch to AI tools is a future integration, not a current capability. The dispatch layer must use authenticated connectors, scoped permissions, explicit approval for consequential actions, and an execution log.
