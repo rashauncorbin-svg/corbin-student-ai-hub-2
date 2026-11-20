@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10182c"><title>Corbin Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="#overview"><span class="brand-mark">C</span><span><b>CORBIN</b><small>COMMAND CENTER</small></span></a>
+<div class="workspace"><span class="eyebrow">WORKSPACE</span><strong>Global Vision Enterprises</strong><span class="status-dot">Internal operations</span></div>
+<nav class="nav">
+<span class="nav-label">COMMAND</span>
+<a class="nav-link active" href="#overview" data-view="overview"><i>◫</i>Overview</a>
+<a class="nav-link" href="#portfolio" data-view="portfolio"><i>▦</i>Portfolio & Products</a>
+<a class="nav-link" href="#production" data-view="production"><i>◷</i>Production Studio</a>
+<a class="nav-link" href="#library" data-view="library"><i>▤</i>Master Content Library</a>
+<span class="nav-label">KNOWLEDGE</span>
+<a class="nav-link" href="#courses" data-view="courses"><i>▧</i>Course Hubs</a>
+<a class="nav-link" href="#learning-system" data-view="learning-system"><i>◇</i>CLS Library</a>
+<a class="nav-link" href="#templates" data-view="templates"><i>▣</i>Template Vault</a>
+<span class="nav-label">OPERATIONS</span>
+<a class="nav-link" href="#clients" data-view="clients"><i>◎</i>Teachers & Clients</a>
+<a class="nav-link" href="#archive" data-view="archive"><i>▱</i>Archive</a>
+</nav>
+<div class="sidebar-bottom"><div class="profile"><div class="avatar">RC</div><div><b>Rashaun Corbin</b><small>Founder · Owner</small></div><span class="owner-tag">OWNER</span></div><p>One source of truth. Built to grow.</p></div>
+</aside>
+<main class="main">
+<header class="topbar"><button class="mobile-menu" id="menuToggle" aria-label="Open navigation">☰</button><div class="crumb">GVE <span>/</span> <b id="crumbTitle">Overview</b></div><div class="top-actions"><label class="global-search"><span>⌕</span><input id="globalSearch" placeholder="Search packages, courses, files…" aria-label="Search command center"><kbd>⌘ K</kbd></label><button class="icon-btn" title="Notifications">♧</button><button class="new-btn" id="newItem">＋ New item</button></div></header>
+<section class="content">
+<div class="welcome"><div><div class="eyebrow gold">FOUNDER WORKSPACE · PRIVATE OPERATIONS</div><h1 id="pageTitle">Good work deserves<br><em>a command center.</em></h1><p id="pageSub">Your operating picture for GVE Educator Solutions—products, people, intellectual property, and production in one connected workspace.</p></div><div class="date-card"><span>WORKSPACE STATUS</span><b><i class="live-dot"></i> Foundation preview</b><small>Command Center · v0.1</small></div></div>
+<div id="viewRoot">
+<div class="section-head"><div><span class="eyebrow">AT A GLANCE</span><h2>Operating overview</h2></div><span class="muted">Illustrative workspace data</span></div>
+<div class="metric-grid">
+<article class="metric"><span>PRODUCT LINES</span><b>04</b><small><i class="up">↗</i> Core portfolio areas</small><div class="metric-icon">▦</div></article>
+<article class="metric"><span>COURSE PACKAGES</span><b>12</b><small>Across active course hubs</small><div class="metric-icon">▤</div></article>
+<article class="metric"><span>IN PRODUCTION</span><b>03</b><small>Current build pipeline</small><div class="metric-icon">◷</div></article>
+<article class="metric"><span>MASTER ASSETS</span><b>128</b><small>Reusable content resources</small><div class="metric-icon">◇</div></article>
+</div>
+<div class="dashboard-grid">
+<section class="panel pipeline-panel"><div class="panel-head"><div><span class="eyebrow">BUILD & SHIP</span><h3>Production pipeline</h3></div><a href="#production" data-view="production">Open studio ↗</a></div><div class="pipeline"><div class="pipeline-row"><span class="pipeline-mark amber">01</span><div><b>World History · Educator Package</b><small>Course package · Curriculum & materials</small></div><span class="pill progress">In progress</span></div><div class="pipeline-row"><span class="pipeline-mark blue">02</span><div><b>Student AI Hub 2.0</b><small>Digital product · Learning platform</small></div><span class="pill review">Testing</span></div><div class="pipeline-row"><span class="pipeline-mark plum">03</span><div><b>AI as a Co-Pilot · PD Series</b><small>Professional development · Framework</small></div><span class="pill queued">Queued</span></div></div></section>
+<section class="panel quick-panel"><div class="panel-head"><div><span class="eyebrow">QUICK ACCESS</span><h3>Workspace shortcuts</h3></div></div><div class="shortcut-grid"><a href="#portfolio" data-view="portfolio"><span>▦</span><b>Product catalog</b><small>Packages & offers</small></a><a href="#library" data-view="library"><span>▤</span><b>Content library</b><small>Reusable IP</small></a><a href="#templates" data-view="templates"><span>▣</span><b>Template vault</b><small>Approved standards</small></a><a href="#clients" data-view="clients"><span>◎</span><b>Client directory</b><small>Teacher relationships</small></a></div></section>
+</div>
+<section class="panel principle-panel"><div class="principle-symbol">✳</div><div><span class="eyebrow gold">THE OPERATING PRINCIPLE</span><h3>Build once. Improve continuously. Reuse intelligently.</h3><p>Approved master assets stay distinct from client-specific work. A package can be duplicated, upgraded, and connected to its source materials without overwriting the original.</p></div></section>
+<div class="footnote">Preview workspace · Sample figures and project records are illustrative, not live business records.</div>
+</div>
+</section>
+</main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog id="newDialog"><form method="dialog" class="dialog-card"><button class="dialog-close" aria-label="Close">×</button><span class="eyebrow gold">CREATE IN WORKSPACE</span><h2>What are we building?</h2><p>Choose a starting point. This preview demonstrates the workspace flow; records are not yet connected to a shared database.</p><div class="new-options"><button value="Package" class="new-option"><b>Course package</b><small>Curriculum, lessons, resources</small></button><button value="Asset" class="new-option"><b>Master content asset</b><small>Reusable document or resource</small></button><button value="Product" class="new-option"><b>Product or initiative</b><small>New GVE offering or project</small></button><button value="Client" class="new-option"><b>Teacher / client</b><small>Relationship and package record</small></button></div></form></dialog>
+<script src="app.js"></script>
+</body></html>
